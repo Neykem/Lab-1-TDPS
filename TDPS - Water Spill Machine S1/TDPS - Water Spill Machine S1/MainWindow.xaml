@@ -1,0 +1,77 @@
+﻿<Window x:Class="TDPS___Water_Spill_Machine_S1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TDPS___Water_Spill_Machine_S1"
+        mc:Ignorable="d"
+        AllowsTransparency="True" WindowStyle="None" Background="Transparent"
+        Title="MainWindow" Height="655" Width="500" WindowStartupLocation="CenterScreen">
+    <Border Name="newBorder">
+        <Border.Background>
+            <ImageBrush ImageSource="Res/123.png"/>
+        </Border.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Border Grid.Row="1">
+                <AdornerDecorator>
+                    <Rectangle Name="Vint" HorizontalAlignment="Center" Height="45" Margin="300,312,154,298" VerticalAlignment="Center" Width="46" RenderTransformOrigin="0.5,0.5">
+                        <Rectangle.RenderTransform>
+                            <RotateTransform Angle="0" CenterX="0" CenterY="0"  x:Name="transform"/>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Res/Ресурс 2.png"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </AdornerDecorator>
+            </Border>
+            <ResizeGrip Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                            Visibility="Collapsed" IsTabStop="False" />
+            <Border Grid.Row="1">
+                <AdornerDecorator>
+                    <Rectangle Name="Vint2" HorizontalAlignment="Center" Height="45" Margin="302,404,152,206" VerticalAlignment="Center" Width="46" RenderTransformOrigin="0.5,0.5">
+                        <Rectangle.RenderTransform>
+                            <RotateTransform Angle="30" CenterX="0" CenterY="0"  x:Name="transform2"/>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Res/Ресурс 2.png"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </AdornerDecorator>
+            </Border>
+            <Button  HorizontalAlignment="Left" Margin="466,625,0,0" Grid.Row="1" VerticalAlignment="Top" Width="24" Height="20" Click="Button_Click"/>
+            <Rectangle HorizontalAlignment="Left" Height="45" Margin="288,323,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Res/4.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="45" Margin="312,323,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Res/4.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="45" Margin="288,413,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Res/4.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="45" Margin="328,427,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="102.574"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Res/4.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Grid>
+    </Border>
+</Window>

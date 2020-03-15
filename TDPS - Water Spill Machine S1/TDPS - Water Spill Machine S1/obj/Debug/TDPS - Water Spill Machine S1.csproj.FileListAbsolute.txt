@@ -1,0 +1,15 @@
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Debug\TDPS - Water Spill Machine S1.exe.config
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Debug\TDPS - Water Spill Machine S1.exe
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Debug\TDPS - Water Spill Machine S1.pdb
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.csprojAssemblyReference.cache
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\MainWindow.g.cs
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\App.g.cs
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1_MarkupCompile.cache
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1_MarkupCompile.lref
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\MainWindow.baml
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.g.resources
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS___Water_Spill_Machine_S1.Properties.Resources.resources
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.csproj.GenerateResource.cache
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.csproj.CoreCompileInputs.cache
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.exe
+C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.pdb
