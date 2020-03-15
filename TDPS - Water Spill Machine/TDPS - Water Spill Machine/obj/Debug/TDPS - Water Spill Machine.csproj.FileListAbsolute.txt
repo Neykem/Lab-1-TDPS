@@ -13,3 +13,10 @@ C:\Users\Brux\source\repos\TDPS - Water Spill Machine\TDPS - Water Spill Machine
 C:\Users\Brux\source\repos\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\TDPS - Water Spill Machine.exe
 C:\Users\Brux\source\repos\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\TDPS - Water Spill Machine.pdb
 C:\Users\Brux\source\repos\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\TDPS - Water Spill Machine.csprojAssemblyReference.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\TDPS - Water Spill Machine.csprojAssemblyReference.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\MainWindow.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\App.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\TDPS - Water Spill Machine_MarkupCompile.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\TDPS - Water Spill Machine_MarkupCompile.lref
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\TDPS - Water Spill Machine.exe
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine\TDPS - Water Spill Machine\obj\Debug\TDPS - Water Spill Machine.pdb

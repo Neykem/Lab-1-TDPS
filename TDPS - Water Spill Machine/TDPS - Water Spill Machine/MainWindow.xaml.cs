@@ -31,6 +31,10 @@ namespace TDPS___Water_Spill_Machine
             this.Close();
         }
 
+        private void C_M(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("G");
+        }
         //Служит для перемещения окна за заголовок формы
         private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {

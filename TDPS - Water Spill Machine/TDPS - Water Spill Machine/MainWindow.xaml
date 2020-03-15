@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:ControlsTemplateApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="690" Width="400"
-        AllowsTransparency="True" WindowStyle="None" Background="Transparent"> <!--IMMPORTANT-->
+        AllowsTransparency="True" WindowStyle="None" Background="Transparent">
+    <!--IMMPORTANT-->
     <Window.Template>
         <ControlTemplate TargetType="Window">
             <Border Name="newBorder">
@@ -31,5 +32,6 @@
         </ControlTemplate>
     </Window.Template>
     <Grid>
+        <Button Click="C_M" HorizontalAlignment="Left" Margin="126,381,0,0" VerticalAlignment="Top" Width="18" Height="45" Background="{x:Null}" BorderBrush="{x:Null}"/>
     </Grid>
 </Window>
