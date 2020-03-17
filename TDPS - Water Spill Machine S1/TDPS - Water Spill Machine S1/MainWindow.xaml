@@ -7,9 +7,28 @@
         mc:Ignorable="d"
         AllowsTransparency="True" WindowStyle="None" Background="Transparent"
         Title="MainWindow" Height="655" Width="500" WindowStartupLocation="CenterScreen">
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard x:Name="Storyboard_1" TargetProperty="Color" TargetName="ButtonGoWaterColor">
+                        <ColorAnimation To="IndianRed" From="White" Duration="0:0:4"/>
+                    </Storyboard>
+                </BeginStoryboard>
+                <BeginStoryboard>
+                    <Storyboard x:Name="Storyboard_2" TargetProperty="Color" TargetName="ButtonGoWaterColor">
+                        <ColorAnimation To="White" From="IndianRed" Duration="0:0:4"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
+
+
     <Border Name="newBorder">
         <Border.Background>
-            <ImageBrush ImageSource="Res/123.png"/>
+            <ImageBrush ImageSource="Res/Backgr_v3.png"/>
         </Border.Background>
         <Grid>
             <Grid.RowDefinitions>
@@ -18,60 +37,164 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Border Grid.Row="1">
-                <AdornerDecorator>
-                    <Rectangle Name="Vint" HorizontalAlignment="Center" Height="45" Margin="300,312,154,298" VerticalAlignment="Center" Width="46" RenderTransformOrigin="0.5,0.5">
-                        <Rectangle.RenderTransform>
-                            <RotateTransform Angle="0" CenterX="0" CenterY="0"  x:Name="transform"/>
-                        </Rectangle.RenderTransform>
-                        <Rectangle.Fill>
-                            <ImageBrush ImageSource="Res/Ресурс 2.png"/>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                </AdornerDecorator>
             </Border>
+            <Rectangle Name="Vint" HorizontalAlignment="Center" Height="45" Margin="302,312,152,296" VerticalAlignment="Center" Width="45" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <RotateTransform Angle="0" CenterX="0" CenterY="0"  x:Name="transform"/>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Res/Vint.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Name="Vint2" HorizontalAlignment="Center" Height="45" Margin="302,403,152,205" VerticalAlignment="Center" Width="46" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <RotateTransform Angle="0" CenterX="0" CenterY="0"  x:Name="transform2"/>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Res/Vint.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
             <ResizeGrip Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"
                             Visibility="Collapsed" IsTabStop="False" />
             <Border Grid.Row="1">
-                <AdornerDecorator>
-                    <Rectangle Name="Vint2" HorizontalAlignment="Center" Height="45" Margin="302,404,152,206" VerticalAlignment="Center" Width="46" RenderTransformOrigin="0.5,0.5">
-                        <Rectangle.RenderTransform>
-                            <RotateTransform Angle="30" CenterX="0" CenterY="0"  x:Name="transform2"/>
-                        </Rectangle.RenderTransform>
-                        <Rectangle.Fill>
-                            <ImageBrush ImageSource="Res/Ресурс 2.png"/>
-                        </Rectangle.Fill>
-                    </Rectangle>
-                </AdornerDecorator>
+                <AdornerDecorator/>
             </Border>
-            <Button  HorizontalAlignment="Left" Margin="466,625,0,0" Grid.Row="1" VerticalAlignment="Top" Width="24" Height="20" Click="Button_Click"/>
             <Rectangle HorizontalAlignment="Left" Height="45" Margin="288,323,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19">
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="Res/4.png"/>
+                    <ImageBrush ImageSource="Res/Bottle.png"/>
                 </Rectangle.Fill>
             </Rectangle>
             <Rectangle HorizontalAlignment="Left" Height="45" Margin="312,323,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19">
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="Res/4.png"/>
+                    <ImageBrush ImageSource="Res/Bottle.png"/>
                 </Rectangle.Fill>
             </Rectangle>
             <Rectangle HorizontalAlignment="Left" Height="45" Margin="288,413,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19">
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="Res/4.png"/>
+                    <ImageBrush ImageSource="Res/Bottle.png"/>
                 </Rectangle.Fill>
             </Rectangle>
-            <Rectangle HorizontalAlignment="Left" Height="45" Margin="328,427,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5">
+            <Rectangle HorizontalAlignment="Left" Height="46" Margin="323,428,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
-                        <RotateTransform Angle="102.574"/>
+                        <RotateTransform Angle="96.798"/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </Rectangle.RenderTransform>
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="Res/4.png"/>
+                    <ImageBrush ImageSource="Res/Bottle.png"/>
                 </Rectangle.Fill>
             </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="45" Margin="342,323,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.076"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Res/Bottle.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
+
+            <Button Name="ButtonGoWater" Margin="136,357,351,283" Width="13" Height="13" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseDoubleClick="ButtonDoubleClickClose">
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="buttonBorder"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                Background="{TemplateBinding Background}"
+                Height="{TemplateBinding Height}"
+                Width="{TemplateBinding Width}" >
+                            <ContentControl Margin="{TemplateBinding Padding}"
+                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                    Content="{TemplateBinding Content}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="FontWeight" Value="Bold" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <!--<Setter TargetName="buttonBorder" Property="Background" Value="Transparent" /> -->
+                                <!--<Setter TargetName="buttonBorder" Property="BorderBrush" Value="Transparent" /> -->
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="Transparent"/>
+                                <Setter TargetName="buttonBorder" Property="Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+
+                <Button.Background>
+                    <SolidColorBrush x:Name="ButtonGoWaterColor" Color="White"/>
+                </Button.Background>
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="Res/EllipseButtonM.png"/>
+                </Button.OpacityMask>
+            </Button>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="132,165,0,0" VerticalAlignment="Top" Width="181" Height="94" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_1">
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="buttonBorder"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                Background="{TemplateBinding Background}"
+                Height="{TemplateBinding Height}"
+                Width="{TemplateBinding Width}" >
+                            <ContentControl Margin="{TemplateBinding Padding}"
+                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                    Content="{TemplateBinding Content}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="FontWeight" Value="Bold" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <!--<Setter TargetName="buttonBorder" Property="Background" Value="Transparent" /> -->
+                                <!--<Setter TargetName="buttonBorder" Property="BorderBrush" Value="Transparent" /> -->
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="Transparent"/>
+                                <Setter TargetName="buttonBorder" Property="Background" Value="Transparent"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+
+                <Button.Background>
+                    <ImageBrush ImageSource="Res/Label.png"/>
+                </Button.Background>
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.207"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <!--<Rectangle HorizontalAlignment="Left" Height="151" Margin="224,24,0,0" VerticalAlignment="Top" Width="272">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="Res/DialogCloud.png"/>
+                </Rectangle.Fill>
+            </Rectangle> -->
+            <!--<Label FontSize="18" Content="Внесено: " HorizontalAlignment="Left" Margin="312,69,0,0" VerticalAlignment="Top"/>
+            <Label FontSize="18"  Content="Стоимость: " HorizontalAlignment="Left" Margin="312,93,0,0" VerticalAlignment="Top"/>
+            <TextBlock FontSize="18" HorizontalAlignment="Left" Margin="392,74,0,0" TextWrapping="Wrap" Text="0$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="50"/>
+            <TextBlock FontSize="18" HorizontalAlignment="Left" Margin="410,98,0,0" TextWrapping="Wrap" Text="10$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="32"/>
+            -->
+
+
         </Grid>
     </Border>
 </Window>

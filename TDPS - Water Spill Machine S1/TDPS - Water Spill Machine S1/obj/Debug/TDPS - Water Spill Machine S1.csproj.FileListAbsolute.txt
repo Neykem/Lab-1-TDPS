@@ -13,3 +13,18 @@ C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Mach
 C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.csproj.CoreCompileInputs.cache
 C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.exe
 C:\Users\Brux\source\repos\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.pdb
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Debug\TDPS - Water Spill Machine S1.exe.config
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Debug\TDPS - Water Spill Machine S1.exe
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Debug\TDPS - Water Spill Machine S1.pdb
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\MainWindow.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\App.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1_MarkupCompile.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1_MarkupCompile.lref
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\MainWindow.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.g.resources
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS___Water_Spill_Machine_S1.Properties.Resources.resources
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.csproj.GenerateResource.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.csproj.CoreCompileInputs.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.exe
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.pdb
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\App.baml

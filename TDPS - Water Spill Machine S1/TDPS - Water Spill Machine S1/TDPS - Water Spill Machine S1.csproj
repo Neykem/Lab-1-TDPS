@@ -95,22 +95,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Res\Ресурс 1.png" />
+    <Resource Include="Res\Bottle.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Res\Слой 1.png" />
+    <Resource Include="Res\EllipseButtonM.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Res\Монтажная область 1.png" />
+    <Resource Include="Res\Backgr_v3.png" />
+    <Resource Include="Res\Label.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Res\Ресурс 2.png" />
+    <Resource Include="Res\DialogCloud.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Res\123.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Res\4.png" />
+    <Resource Include="Res\Vint.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
