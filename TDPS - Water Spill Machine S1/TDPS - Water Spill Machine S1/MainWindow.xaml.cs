@@ -19,6 +19,9 @@ namespace TDPS___Water_Spill_Machine_S1
     static public class GlobalVar
     {
         static public bool button_animation_switch_stat = true;
+        static public int cash_deposit = 0;
+        static public int cash_change = 0;
+        static public int goods_cost = 10;
     }
     public partial class MainWindow : Window
     {
@@ -75,6 +78,11 @@ namespace TDPS___Water_Spill_Machine_S1
         private void ButtonDoubleClickClose(object sender, MouseButtonEventArgs e)
         {
             this.Close();
+        }
+
+        private void Coin_Acceptor_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("AAA!");
         }
     }
 }
