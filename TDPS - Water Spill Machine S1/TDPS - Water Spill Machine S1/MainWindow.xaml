@@ -104,7 +104,7 @@
             </Rectangle>
             <!--End Bottel Decoration-->
             <!--Button GetWather-->
-            <Button Name="ButtonGoWater" Margin="136,357,351,283" Width="13" Height="13" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseDoubleClick="ButtonDoubleClickClose">
+            <Button Name="ButtonGoWater" Margin="136,357,351,283" Width="13" Height="13" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseDoubleClick="ButtonDoubleClickClose" Click="ButtonGoWater_Click">
 
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -145,7 +145,7 @@
             </Button>
             <!--EndButton GetWather-->
             <!--Label 'Vim!'-->
-            <Button Content="Button" HorizontalAlignment="Left" Margin="132,165,0,0" VerticalAlignment="Top" Width="181" Height="94" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click_1">
+            <Button Content="Button" HorizontalAlignment="Left" Margin="132,165,0,0" VerticalAlignment="Top" Width="181" Height="94" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Label_Vim_Click">
 
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -188,20 +188,22 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
+            <Grid Visibility="Hidden" Name="MessCloudGroup" Margin="224,24,4,478">
+                <Rectangle x:Name="MessCloud" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="272" Visibility="Visible">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Res/DialogCloud.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <TextBlock x:Name="B_textB" FontSize="17" HorizontalAlignment="Left" Margin="97,75,0,0" TextWrapping="Wrap" Text="Сдача: " VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="79" FontFamily="Segoe Print" Visibility="Visible"/>
+                <TextBlock x:Name="H_textB" FontSize="17" HorizontalAlignment="Left" Margin="85,45,0,0" TextWrapping="Wrap" Text="Успешно!" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="118" FontFamily="Segoe Print" Visibility="Visible"/>
+                <TextBlock x:Name="Deposit" FontSize="17" HorizontalAlignment="Left" Margin="176,75,0,0" TextWrapping="Wrap" Text="0$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="50" FontFamily="Segoe Print" Visibility="Visible"/>
+                <TextBlock x:Name="Cost" FontSize="17" HorizontalAlignment="Left" Margin="203,45,0,0" TextWrapping="Wrap" Text="10$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="46" FontFamily="Segoe Print" Visibility="Visible"/>
+                <TextBlock x:Name="Сhange" FontSize="17" HorizontalAlignment="Left" Margin="190,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="50" FontFamily="Segoe Print" Visibility="Visible"/>
+            </Grid>
             <!--EndLabel 'Vim!'-->
             <!--MessCloud-->
-            <Rectangle Name="MessCloud" HorizontalAlignment="Left" Height="151" Margin="224,24,0,0" VerticalAlignment="Top" Width="272">
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="Res/DialogCloud.png"/>
-                </Rectangle.Fill>
-            </Rectangle>
-            <TextBlock Name="B_textB" FontSize="17" HorizontalAlignment="Left" Margin="321,99,0,0" TextWrapping="Wrap" Text="Сдача: " VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="79" FontFamily="Segoe Print"/>
-            <TextBlock Name="H_textB" FontSize="17" HorizontalAlignment="Left" Margin="309,69,0,0" TextWrapping="Wrap" Text="Успешно!" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="118" FontFamily="Segoe Print"/>
-            <TextBlock Name="Deposit" FontSize="17" HorizontalAlignment="Left" Margin="400,99,0,0" TextWrapping="Wrap" Text="0$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="50" FontFamily="Segoe Print"/>
-            <TextBlock Name="Cost" FontSize="17" HorizontalAlignment="Left" Margin="427,69,0,0" TextWrapping="Wrap" Text="10$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="46" FontFamily="Segoe Print"/>
-            <TextBlock Name="Сhange" FontSize="17" HorizontalAlignment="Left" Margin="414,84,0,0" TextWrapping="Wrap" Text="0$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="50" FontFamily="Segoe Print"/>
             <!--EndMessCloud-->
-            <Button HorizontalAlignment="Left" Margin="184,355,0,0" VerticalAlignment="Top" Width="16" Height="37" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Coin_Acceptor_Click">
+            <Button Name="Coin_Acceptor" HorizontalAlignment="Left" Margin="184,355,0,0" VerticalAlignment="Top" Width="16" Height="37" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Coin_Acceptor_Click">
 
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -237,7 +239,7 @@
                     <SolidColorBrush Color="Black" Opacity="0"/>
                 </Button.Background>
             </Button>
-            <Button HorizontalAlignment="Left" Margin="165,440,0,0" VerticalAlignment="Top" Width="30" Height="25" Background="#00000000" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Button Name="Coin_Extradition" HorizontalAlignment="Left" Margin="165,440,0,0" VerticalAlignment="Top" Width="30" Height="25" Background="#00000000" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Coin_Extradition_Click">
 
                 <Button.Template>
                     <ControlTemplate TargetType="Button">

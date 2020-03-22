@@ -1,0 +1,32 @@
+﻿<Window x:Class="TDPS___Water_Spill_Machine_S1.Window_coin_acceptor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TDPS___Water_Spill_Machine_S1"
+        mc:Ignorable="d"
+        Title="Window_coin_acceptor" Height="235.333" Width="358" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Name="Coin1"  Content="1$: " HorizontalAlignment="Left" Margin="10,31,0,129" Width="131" FontSize="20"/>
+        <Label Content="5$: " HorizontalAlignment="Left" Margin="10,58,0,102" Width="131" FontSize="20"/>
+        <Label Content="10$: " Margin="10,84,151,76" FontSize="20"/>
+        <Label Content="Имеется:" HorizontalAlignment="Left" Margin="141,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Внести:" HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="Deposit_set_d1" HorizontalAlignment="Left" Margin="237,47,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock Name="Deposit_set_d5" HorizontalAlignment="Left" Margin="237,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock Name="Deposit_set_d10" HorizontalAlignment="Left" Margin="237,100,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock Name="Have_d1" HorizontalAlignment="Left" Margin="165,47,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock Name="Have_d5" HorizontalAlignment="Left" Margin="165,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock Name="Have_d10" HorizontalAlignment="Left" Margin="165,100,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <Button Content="Принять" HorizontalAlignment="Left" Margin="286,162,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click"/>
+        <Label Content="Сумма к оплате: " HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top"/>
+        <Grid Margin="286,48,19,78">
+            <Button Name="d1_pl" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" Click="D1_pl_Click"/>
+            <Button Name="d5_pl" Content="+" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D5_pl_Click"/>
+            <Button Name="d10_pl" Content="+" HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D10_pl_Click"/>
+            <Button Name="d10_ms" Content="-" HorizontalAlignment="Left" Margin="25,58,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D10_ms_Click"/>
+            <Button Name="d5_ms" Content="-" HorizontalAlignment="Left" Margin="25,29,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D5_ms_Click"/>
+            <Button Name="d1_ms" Content="-" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D1_ms_Click"/>
+        </Grid>
+    </Grid>
+</Window>

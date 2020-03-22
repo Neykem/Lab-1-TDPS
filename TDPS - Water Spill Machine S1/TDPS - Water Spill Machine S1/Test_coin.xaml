@@ -1,0 +1,13 @@
+﻿<Window x:Class="TDPS___Water_Spill_Machine_S1.Test_coin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TDPS___Water_Spill_Machine_S1"
+        mc:Ignorable="d"
+        Title="Test_coin" Height="450" Width="800">
+    <Grid>
+        <Image MouseDown="Image_MouseDown" HorizontalAlignment="Left" Height="100" Margin="36,155,0,0" VerticalAlignment="Top" Width="50" Source="Res/Bottle.png"/>
+        <Button Drop="Button_Drop" Content="Button" HorizontalAlignment="Left" Margin="645,174,0,0" VerticalAlignment="Top" Width="41" Height="81"/>
+    </Grid>
+</Window>
