@@ -28,8 +28,8 @@ E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\ob
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.exe
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.pdb
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\App.baml
-E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.csprojAssemblyReference.cache
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\Window_coin_acceptor.g.cs
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\Window_coin_acceptor.baml
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\Test_coin.g.cs
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\Test_coin.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\TDPS - Water Spill Machine S1.csprojAssemblyReference.cache

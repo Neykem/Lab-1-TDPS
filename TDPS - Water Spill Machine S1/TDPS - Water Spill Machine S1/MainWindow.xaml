@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:TDPS___Water_Spill_Machine_S1"
         mc:Ignorable="d"
         AllowsTransparency="True" WindowStyle="None" Background="Transparent"
-        Title="MainWindow" Height="655" Width="500" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="655" Width="500" WindowStartupLocation="CenterScreen" Topmost="True" Icon="Res/Bottle.png" AllowDrop="True" SnapsToDevicePixels="True" ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
 
     <Window.Triggers>
         <EventTrigger RoutedEvent="Loaded">
@@ -188,16 +189,16 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Grid Visibility="Hidden" Name="MessCloudGroup" Margin="224,24,4,478">
+            <Grid Visibility="Visible" Name="MessCloudGroup" Margin="224,24,4,478">
                 <Rectangle x:Name="MessCloud" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="272" Visibility="Visible">
                     <Rectangle.Fill>
                         <ImageBrush ImageSource="Res/DialogCloud.png"/>
                     </Rectangle.Fill>
                 </Rectangle>
-                <TextBlock x:Name="B_textB" FontSize="17" HorizontalAlignment="Left" Margin="97,75,0,0" TextWrapping="Wrap" Text="Сдача: " VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="79" FontFamily="Segoe Print" Visibility="Visible"/>
-                <TextBlock x:Name="H_textB" FontSize="17" HorizontalAlignment="Left" Margin="85,45,0,0" TextWrapping="Wrap" Text="Успешно!" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="118" FontFamily="Segoe Print" Visibility="Visible"/>
-                <TextBlock x:Name="Deposit" FontSize="17" HorizontalAlignment="Left" Margin="176,75,0,0" TextWrapping="Wrap" Text="0$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="50" FontFamily="Segoe Print" Visibility="Visible"/>
-                <TextBlock x:Name="Cost" FontSize="17" HorizontalAlignment="Left" Margin="203,45,0,0" TextWrapping="Wrap" Text="10$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="46" FontFamily="Segoe Print" Visibility="Visible"/>
+                <TextBlock x:Name="B_textB" FontSize="17" HorizontalAlignment="Left" Margin="94,75,0,0" TextWrapping="Wrap" Text="Сдача: " VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="126" FontFamily="Segoe Print" Visibility="Visible"/>
+                <TextBlock x:Name="H_textB" FontSize="17" HorizontalAlignment="Left" Margin="85,45,0,0" TextWrapping="Wrap" Text="Успешно!" VerticalAlignment="Top" RenderTransformOrigin="0.372,0.9" Width="164" FontFamily="Segoe Print" Visibility="Visible"/>
+                <TextBlock x:Name="Deposit" FontSize="17" HorizontalAlignment="Left" Margin="199,45,0,0" TextWrapping="Wrap" Text="0$" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="50" FontFamily="Segoe Print" Visibility="Visible"/>
+                <TextBlock x:Name="Cost" FontSize="17" HorizontalAlignment="Left" Margin="180,75,0,0" TextWrapping="Wrap" Text="10$" VerticalAlignment="Top" RenderTransformOrigin="0.478,0.6" Width="51" FontFamily="Segoe Print" Visibility="Visible"/>
                 <TextBlock x:Name="Сhange" FontSize="17" HorizontalAlignment="Left" Margin="190,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.345,0.47" Width="50" FontFamily="Segoe Print" Visibility="Visible"/>
             </Grid>
             <!--EndLabel 'Vim!'-->

@@ -23,12 +23,20 @@ namespace TDPS___Water_Spill_Machine_S1
         static public int cash_change = 0;
         static public int goods_cost = 10;
         static public bool hidden_mess_status = false;
+        static public bool cash_change_is_have = false;
+        static public int bottle_col = 5;
+        //public event Action<String> MyPersonalizedUCEvent;
     }
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             this.InitializeComponent();
+            MessCloudGroup.Visibility = Visibility.Hidden;
+            H_textB.Text = "Депозит: ";
+            B_textB.Text = "Цена: ";
+            Deposit.Text = GlobalVar.cash_deposit.ToString() + "$";
+            Cost.Text = GlobalVar.goods_cost.ToString() + "$";
             // Animation Section
             #region 
 
@@ -53,10 +61,6 @@ namespace TDPS___Water_Spill_Machine_S1
             timer.Start();
         }
 
-        private void GetWater(object sender, RoutedEventArgs e)
-        {
-
-        }
         private void Timer_Tick(object sender, EventArgs e)
         {
             if (GlobalVar.button_animation_switch_stat == false)
@@ -78,14 +82,30 @@ namespace TDPS___Water_Spill_Machine_S1
 
         private void Coin_Acceptor_Click(object sender, RoutedEventArgs e)
         {
-            Window_coin_acceptor _Coin_Acceptor = new Window_coin_acceptor();
-            _Coin_Acceptor.Owner = this;
-            _Coin_Acceptor.Show();
+            if (GlobalVar.cash_change == 0)
+            {
+                Window_coin_acceptor _Coin_Acceptor = new Window_coin_acceptor();
+                _Coin_Acceptor.Owner = this;
+                _Coin_Acceptor.Show();
+            }
+            else if (GlobalVar.cash_change != 0)
+            {
+                H_textB.Text = "Заберите сдачу!";
+                B_textB.Text = "Сначала!";
+                Cost.Text = "";
+                Сhange.Text = "";
+                Deposit.Text = "";
+                GlobalVar.cash_change_is_have = true;
+                MessCloidAnimation();
+            }
         }
 
         private void Coin_Extradition_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("AAA!");
+            GlobalVar.cash_change = 0;
+            MessageBox.Show(DepozitGlobalVar.buff_col_d1.ToString());
+            MessageBox.Show(DepozitGlobalVar.buff_col_d5.ToString());
+            MessageBox.Show(DepozitGlobalVar.buff_col_d10.ToString());
         }
 
         private void Label_Vim_Click(object sender, RoutedEventArgs e)
@@ -93,28 +113,54 @@ namespace TDPS___Water_Spill_Machine_S1
             MessageBox.Show("AAA!");
         }
 
-         async private void ButtonGoWater_Click(object sender, RoutedEventArgs e)
+        private void ButtonGoWater_Click(object sender, RoutedEventArgs e)
         {
             int buff_1, buff_2;
-            if (GlobalVar.cash_deposit >= GlobalVar.goods_cost)
-            {
-                GlobalVar.cash_deposit -= GlobalVar.goods_cost;
-                GlobalVar.cash_change = GlobalVar.cash_deposit;
-                Сhange.Text = GlobalVar.cash_change.ToString() + '$';
-                buff_1 = GlobalVar.cash_change % 10;
-                DepozitGlobalVar.buff_col_d10 = (GlobalVar.cash_change - buff_1) / 10;
-                buff_2 = buff_1 % 5;
-                DepozitGlobalVar.buff_col_d5 = (buff_1 - buff_2) / 5;
-                DepozitGlobalVar.buff_col_d1 = buff_2;
-                MessageBox.Show(buff_1.ToString());
-                MessageBox.Show(buff_2.ToString());
-                MessageBox.Show(DepozitGlobalVar.buff_col_d1.ToString());
-                MessageBox.Show(DepozitGlobalVar.buff_col_d5.ToString());
-                MessageBox.Show(DepozitGlobalVar.buff_col_d10.ToString());
+            if (GlobalVar.cash_change == 0) {
+                if (GlobalVar.cash_deposit >= GlobalVar.goods_cost)
+                {
+                    GlobalVar.cash_deposit -= GlobalVar.goods_cost;
+                    GlobalVar.cash_change = GlobalVar.cash_deposit;
+                    Сhange.Text = GlobalVar.cash_change.ToString() + '$';
+                    buff_1 = GlobalVar.cash_change % 10;
+                    DepozitGlobalVar.buff_col_d10 = (GlobalVar.cash_change - buff_1) / 10;
+                    buff_2 = buff_1 % 5;
+                    DepozitGlobalVar.buff_col_d5 = (buff_1 - buff_2) / 5;
+                    DepozitGlobalVar.buff_col_d1 = buff_2;
+                    H_textB.Text = "Успешно: ";
+                    B_textB.Text = "Сдача: ";
+                    Deposit.Text = "";
+                    Cost.Text = "";
+                    GlobalVar.bottle_col--;
+                    Delete_bottle();
+                }
             }
+            else if (GlobalVar.cash_change != 0)
+            {
+                H_textB.Text = "Заберите сдачу!";
+                B_textB.Text = "Сначала!";
+                Cost.Text = "";
+                Сhange.Text = "";
+                Deposit.Text = "";
+                GlobalVar.cash_change_is_have = true;
+            }
+            MessCloudGroup.Visibility = Visibility.Visible;
+            MessCloidAnimation();
+        }
+        private void Coin_Acceptor_Drop(object sender, DragEventArgs e)
+        {
+            MessageBox.Show("AAA!");
+        }
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+        async private void MessCloidAnimation()
+        {
             MessCloudGroup.Visibility = Visibility.Visible;
             if (GlobalVar.hidden_mess_status == false)
             {
+                GlobalVar.hidden_mess_status = true;
                 MessCloudGroup.BeginAnimation(OpacityProperty,
                 new DoubleAnimation
                 {
@@ -122,7 +168,7 @@ namespace TDPS___Water_Spill_Machine_S1
                     To = 1.0,
                     Duration = TimeSpan.FromSeconds(3)
                 });
-                  await Task.Delay(4000);
+                await Task.Delay(4000);
                 MessCloudGroup.BeginAnimation(OpacityProperty,
                 new DoubleAnimation
                 {
@@ -130,14 +176,32 @@ namespace TDPS___Water_Spill_Machine_S1
                     To = 0.0,
                     Duration = TimeSpan.FromSeconds(3)
                 });
-
-                //  MessCloudGroup.Visibility = Visibility.Visible;
-               // GlobalVar.hidden_mess_status = true;
+                GlobalVar.hidden_mess_status = false;
             }
         }
-        private void Coin_Acceptor_Drop(object sender, DragEventArgs e)
+        private void Delete_bottle()
         {
-            MessageBox.Show("AAA!");
+            switch (GlobalVar.bottle_col)
+            {
+                case 4:
+                    Bottle_1.Visibility = Visibility.Hidden;
+                    break;
+                case 3:
+                    Bottle_2.Visibility = Visibility.Hidden;
+                    break;
+                case 2:
+                    Bottle_3.Visibility = Visibility.Hidden;
+                    break;
+                case 1:
+                    Bottle_4.Visibility = Visibility.Hidden;
+                    break;
+                case 0:
+                    Bottle_5.Visibility = Visibility.Hidden;
+                    break;
+                default:
+                    MessageBox.Show("NO BOTTLE");
+                    break;
+            }
         }
     }
 }
