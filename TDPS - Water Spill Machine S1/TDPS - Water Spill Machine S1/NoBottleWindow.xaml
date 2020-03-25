@@ -1,0 +1,23 @@
+﻿<Window x:Class="TDPS___Water_Spill_Machine_S1.NoBottleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TDPS___Water_Spill_Machine_S1"
+        mc:Ignorable="d"
+        Title="NoBottleWindow" Height="225" Width="400" Foreground="#FF2F2C26" WindowStyle="None" ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Window.Background>
+        <ImageBrush ImageSource="Res/form_content.png"/>
+    </Window.Background>
+    <Grid>
+        <TextBlock Margin="35,45,35,0" TextWrapping="Wrap" Text="Вы выпили все что было, может вам хватит?" TextAlignment="Center" FontSize="20" FontWeight="Bold" Height="86" VerticalAlignment="Top"/>
+        <Button Content="ЕЩЕ!!!" HorizontalAlignment="Left" Height="49" Margin="55,129,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.517,0.492" Foreground="#FF2F2C26" BorderBrush="#FF2F2C26" FontWeight="Bold" FontSize="14" Click="Button_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFF32C2C" Opacity="0.1"/>
+            </Button.Background>
+        </Button>
+        <Button Content="На этом все" Height="49" Margin="241,129,55,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#FF2F2C26" Foreground="#FF2F2C26" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

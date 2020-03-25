@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/vint.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("res/form_content.png")]
 
 

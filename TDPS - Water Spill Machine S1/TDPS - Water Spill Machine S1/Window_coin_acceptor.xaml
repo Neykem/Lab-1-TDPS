@@ -5,28 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TDPS___Water_Spill_Machine_S1"
         mc:Ignorable="d"
-        Title="Window_coin_acceptor" Height="235.333" Width="358" WindowStartupLocation="CenterScreen">
+        Title="Window_coin_acceptor" Height="235.333" Width="358" WindowStartupLocation="CenterScreen" Icon="Res/Bottle.png" ResizeMode="NoResize" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Window.Background>
+        <ImageBrush ImageSource="Res/form_content.png"/>
+    </Window.Background>
     <Grid>
-        <Label Name="Coin1"  Content="1$: " HorizontalAlignment="Left" Margin="10,31,0,129" Width="131" FontSize="20"/>
-        <Label Content="5$: " HorizontalAlignment="Left" Margin="10,58,0,102" Width="131" FontSize="20"/>
-        <Label Content="10$: " Margin="10,84,151,76" FontSize="20"/>
-        <Label Content="Имеется:" HorizontalAlignment="Left" Margin="141,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Внести:" HorizontalAlignment="Left" Margin="216,10,0,0" VerticalAlignment="Top"/>
-        <TextBlock Name="Deposit_set_d1" HorizontalAlignment="Left" Margin="237,47,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-        <TextBlock Name="Deposit_set_d5" HorizontalAlignment="Left" Margin="237,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-        <TextBlock Name="Deposit_set_d10" HorizontalAlignment="Left" Margin="237,100,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-        <TextBlock Name="Have_d1" HorizontalAlignment="Left" Margin="165,47,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-        <TextBlock Name="Have_d5" HorizontalAlignment="Left" Margin="165,73,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-        <TextBlock Name="Have_d10" HorizontalAlignment="Left" Margin="165,100,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-        <Button Content="Принять" HorizontalAlignment="Left" Margin="286,162,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click"/>
-        <Label Content="Сумма к оплате: " HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top"/>
-        <Grid Margin="286,48,19,78">
-            <Button Name="d1_pl" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" Click="D1_pl_Click"/>
-            <Button Name="d5_pl" Content="+" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D5_pl_Click"/>
-            <Button Name="d10_pl" Content="+" HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D10_pl_Click"/>
-            <Button Name="d10_ms" Content="-" HorizontalAlignment="Left" Margin="25,58,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D10_ms_Click"/>
-            <Button Name="d5_ms" Content="-" HorizontalAlignment="Left" Margin="25,29,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D5_ms_Click"/>
-            <Button Name="d1_ms" Content="-" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D1_ms_Click"/>
+        <Grid Margin="10,31,151,76">
+            <Label x:Name="Coin1"  Content="1$: " HorizontalAlignment="Left" Margin="10,26,0,27" Width="131" FontSize="20" Foreground="#FF342E29" FontFamily="Arial"/>
+            <Label Content="5$: " HorizontalAlignment="Left" Margin="10,53,0,0" Width="131" FontSize="20" Foreground="#FF342E29" FontFamily="Arial"/>
+            <Label Content="10$: " Margin="10,79,-10,-26" FontSize="20" Foreground="#FF342E29" FontFamily="Arial"/>
         </Grid>
+        <Grid Margin="146,31,151,100">
+            <Label Content="Имеется:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial"/>
+            <Grid Margin="24,37,30,0">
+                <TextBlock x:Name="Have_d1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial" Margin="0,0,-10,0" Width="17"/>
+                <TextBlock x:Name="Have_d5" HorizontalAlignment="Left" Margin="0,26,-10,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial" Width="17"/>
+                <TextBlock x:Name="Have_d10" HorizontalAlignment="Left" Margin="0,53,-31,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial" Width="38"/>
+            </Grid>
+            <Label Content="Номинал:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial" Margin="-126,0,0,0"/>
+        </Grid>
+        <Grid Margin="217,31,87,100">
+            <Label Content="Внесно:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial"/>
+            <Grid Margin="21,37,26,0">
+                <TextBlock x:Name="Deposit_set_d1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial"/>
+                <TextBlock x:Name="Deposit_set_d5" HorizontalAlignment="Left" Margin="0,26,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial"/>
+                <TextBlock x:Name="Deposit_set_d10" HorizontalAlignment="Left" Margin="0,53,-23,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Foreground="#FF2E2A25" FontFamily="Arial" Width="30"/>
+            </Grid>
+        </Grid>
+        <Button Content="Принять" HorizontalAlignment="Left" Margin="265,162,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Foreground="#FF2E2A25" FontFamily="Arial" Height="25" BorderBrush="#FF342E28" Background="{x:Null}"/>
+        <Grid Margin="286,63,19,63">
+            <Button x:Name="d1_pl" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" Click="D1_pl_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
+            <Button x:Name="d5_pl" Content="+" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D5_pl_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
+            <Button x:Name="d10_pl" Content="+" HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D10_pl_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
+            <Button x:Name="d10_ms" Content="-" HorizontalAlignment="Left" Margin="25,58,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D10_ms_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
+            <Button x:Name="d5_ms" Content="-" HorizontalAlignment="Left" Margin="25,29,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D5_ms_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
+            <Button x:Name="d1_ms" Content="-" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D1_ms_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
+        </Grid>
+        <Grid Margin="10,157,151,48">
+            <Label Content="Сумма к оплате: " HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" FontFamily="Arial" Foreground="#FF34312B" FontSize="16"/>
+            <TextBlock Name="f_Deposit" HorizontalAlignment="Left" Margin="152,2,-15,0" TextWrapping="Wrap" Text="0$" VerticalAlignment="Top" FontSize="20" Width="60" Foreground="#FF352F29"/>
+        </Grid>
+        <Button Content=".чит." Margin="165,207,169,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FF2F2C26" FontSize="6" Click="Button_Click_1"/>
     </Grid>
 </Window>

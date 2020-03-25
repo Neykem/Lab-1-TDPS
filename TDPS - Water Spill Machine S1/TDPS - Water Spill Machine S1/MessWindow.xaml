@@ -1,0 +1,19 @@
+﻿<Window x:Class="TDPS___Water_Spill_Machine_S1.MessWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TDPS___Water_Spill_Machine_S1"
+        mc:Ignorable="d"
+        Title="MessWindow" Height="225" Width="400" Foreground="#FF2C2923" FontFamily="Arial" WindowStyle="None" ResizeMode="NoResize" 
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Window.Background>
+        <ImageBrush ImageSource="Res/form_content.png"/>
+    </Window.Background>
+    <Grid>
+        <TextBlock Name="Main_page_label" HorizontalAlignment="Left" Margin="29,35,0,0" TextWrapping="Wrap" Text="Вы приемнике вы нашли: " VerticalAlignment="Top" Height="86" Width="309" FontSize="20"/>
+        <Button Name="OK_cash_remove" Content="Забрать" HorizontalAlignment="Left" Height="31" Margin="283,148,0,0" VerticalAlignment="Top" Width="93" Background="{x:Null}" Foreground="#FF2E2B25" BorderBrush="#FF2E2B25" Click="Button_Click" FontSize="18"/>
+        <TextBlock Name="Cash_remove" HorizontalAlignment="Left" Margin="4,100,0,0" TextWrapping="Wrap" Text="10$ - 0     5$ - 0     1$ - 0" VerticalAlignment="Top" Width="392" FontSize="20" TextAlignment="Center"/>
+
+    </Grid>
+</Window>

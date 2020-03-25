@@ -1,0 +1,26 @@
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Release\TDPS - Water Spill Machine S1.exe.config
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Release\TDPS - Water Spill Machine S1.exe
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\bin\Release\TDPS - Water Spill Machine S1.pdb
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS - Water Spill Machine S1.csprojAssemblyReference.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\Close_form.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\MainWindow.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\MessWindow.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\NoBottleWindow.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\Tutorial_label.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\Window_coin_acceptor.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\App.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS - Water Spill Machine S1_MarkupCompile.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS - Water Spill Machine S1_MarkupCompile.lref
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\App.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\Close_form.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\MainWindow.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\MessWindow.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\NoBottleWindow.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\Tutorial_label.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\Window_coin_acceptor.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS - Water Spill Machine S1.g.resources
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS___Water_Spill_Machine_S1.Properties.Resources.resources
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS - Water Spill Machine S1.csproj.GenerateResource.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS - Water Spill Machine S1.csproj.CoreCompileInputs.cache
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS - Water Spill Machine S1.exe
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Release\TDPS - Water Spill Machine S1.pdb

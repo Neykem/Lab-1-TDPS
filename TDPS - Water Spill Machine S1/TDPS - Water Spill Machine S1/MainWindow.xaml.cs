@@ -24,6 +24,7 @@ namespace TDPS___Water_Spill_Machine_S1
         static public int goods_cost = 10;
         static public bool hidden_mess_status = false;
         static public bool cash_change_is_have = false;
+        static public bool max_tutor_windows_is_increased = false;
         static public int bottle_col = 5;
         //public event Action<String> MyPersonalizedUCEvent;
     }
@@ -60,7 +61,6 @@ namespace TDPS___Water_Spill_Machine_S1
             timer.Interval = new TimeSpan(0, 0, 4);
             timer.Start();
         }
-
         private void Timer_Tick(object sender, EventArgs e)
         {
             if (GlobalVar.button_animation_switch_stat == false)
@@ -74,12 +74,12 @@ namespace TDPS___Water_Spill_Machine_S1
                 GlobalVar.button_animation_switch_stat = false;
             }
         }
-
         private void ButtonDoubleClickClose(object sender, MouseButtonEventArgs e)
         {
-            this.Close();
+            Close_form close_Form = new Close_form();
+            close_Form.Owner = this;
+            close_Form.Show();
         }
-
         private void Coin_Acceptor_Click(object sender, RoutedEventArgs e)
         {
             if (GlobalVar.cash_change == 0)
@@ -99,20 +99,25 @@ namespace TDPS___Water_Spill_Machine_S1
                 MessCloidAnimation();
             }
         }
-
         private void Coin_Extradition_Click(object sender, RoutedEventArgs e)
         {
             GlobalVar.cash_change = 0;
-            MessageBox.Show(DepozitGlobalVar.buff_col_d1.ToString());
-            MessageBox.Show(DepozitGlobalVar.buff_col_d5.ToString());
-            MessageBox.Show(DepozitGlobalVar.buff_col_d10.ToString());
+            MessWindow messWindow = new MessWindow();
+            messWindow.Owner = this;
+            messWindow.Show();
+            DepozitGlobalVar.col_d1 += DepozitGlobalVar.buff_col_d1;
+            DepozitGlobalVar.col_d5 += DepozitGlobalVar.buff_col_d5;
+            DepozitGlobalVar.col_d10 += DepozitGlobalVar.buff_col_d10;
+            DepozitGlobalVar.buff_col_d1 = 0;
+            DepozitGlobalVar.buff_col_d5 = 0;
+            DepozitGlobalVar.buff_col_d10 = 0;
         }
-
         private void Label_Vim_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("AAA!");
+            Tutorial_label tutorial_Label = new Tutorial_label();
+            tutorial_Label.Owner = this;
+            tutorial_Label.Show();
         }
-
         private void ButtonGoWater_Click(object sender, RoutedEventArgs e)
         {
             int buff_1, buff_2;
@@ -133,6 +138,14 @@ namespace TDPS___Water_Spill_Machine_S1
                     Cost.Text = "";
                     GlobalVar.bottle_col--;
                     Delete_bottle();
+                }
+                else
+                {
+                    H_textB.Text = "Депозит: ";
+                    B_textB.Text = "Цена: ";
+                    Cost.Text = GlobalVar.goods_cost.ToString() + "$";
+                    Сhange.Text = "";
+                    Deposit.Text = GlobalVar.cash_deposit.ToString() + "$";
                 }
             }
             else if (GlobalVar.cash_change != 0)
@@ -179,7 +192,7 @@ namespace TDPS___Water_Spill_Machine_S1
                 GlobalVar.hidden_mess_status = false;
             }
         }
-        private void Delete_bottle()
+        public void Delete_bottle()
         {
             switch (GlobalVar.bottle_col)
             {
@@ -198,8 +211,19 @@ namespace TDPS___Water_Spill_Machine_S1
                 case 0:
                     Bottle_5.Visibility = Visibility.Hidden;
                     break;
+                case 1488:
+                    Bottle_1.Visibility = Visibility.Visible;
+                    Bottle_2.Visibility = Visibility.Visible;
+                    Bottle_3.Visibility = Visibility.Visible;
+                    Bottle_4.Visibility = Visibility.Visible;
+                    Bottle_5.Visibility = Visibility.Visible;
+                    GlobalVar.bottle_col = 5;
+                    break;
                 default:
-                    MessageBox.Show("NO BOTTLE");
+                    //MessageBox.Show("NO BOTTLE");
+                    NoBottleWindow noBottleWindow = new NoBottleWindow();
+                    noBottleWindow.Owner = this;
+                    noBottleWindow.ShowDialog();
                     break;
             }
         }

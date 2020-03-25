@@ -31,6 +31,13 @@ namespace TDPS___Water_Spill_Machine_S1
             Have_d1.Text = DepozitGlobalVar.col_d1.ToString();
             Have_d5.Text = DepozitGlobalVar.col_d5.ToString();
             Have_d10.Text = DepozitGlobalVar.col_d10.ToString();
+            Deposit_set_d1.Text = DepozitGlobalVar.buff_col_d1.ToString();
+            Deposit_set_d5.Text = DepozitGlobalVar.buff_col_d5.ToString();
+            Deposit_set_d10.Text = DepozitGlobalVar.buff_col_d10.ToString();
+        }
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
         //1d
         private void D1_pl_Click(object sender, RoutedEventArgs e)
@@ -42,6 +49,7 @@ namespace TDPS___Water_Spill_Machine_S1
                 DepozitGlobalVar.buff_col_d1++;
                 Have_d1.Text = DepozitGlobalVar.col_d1.ToString();
                 Deposit_set_d1.Text = DepozitGlobalVar.buff_col_d1.ToString();
+                f_Deposit.Text = GlobalVar.cash_deposit.ToString() + "$";
             }
         }
         private void D1_ms_Click(object sender, RoutedEventArgs e)
@@ -53,6 +61,7 @@ namespace TDPS___Water_Spill_Machine_S1
                 DepozitGlobalVar.buff_col_d1--;
                 Have_d1.Text = DepozitGlobalVar.col_d1.ToString();
                 Deposit_set_d1.Text = DepozitGlobalVar.buff_col_d1.ToString();
+                f_Deposit.Text = GlobalVar.cash_deposit.ToString() + "$";
             }
         }
         //5d
@@ -65,6 +74,7 @@ namespace TDPS___Water_Spill_Machine_S1
                 DepozitGlobalVar.buff_col_d5++;
                 Have_d5.Text = DepozitGlobalVar.col_d5.ToString();
                 Deposit_set_d5.Text = DepozitGlobalVar.buff_col_d5.ToString();
+                f_Deposit.Text = GlobalVar.cash_deposit.ToString() + "$";
             }
         }
         private void D5_ms_Click(object sender, RoutedEventArgs e)
@@ -76,6 +86,7 @@ namespace TDPS___Water_Spill_Machine_S1
                 DepozitGlobalVar.buff_col_d5--;
                 Have_d5.Text = DepozitGlobalVar.col_d5.ToString();
                 Deposit_set_d5.Text = DepozitGlobalVar.buff_col_d5.ToString();
+                f_Deposit.Text = GlobalVar.cash_deposit.ToString() + "$";
             }
         }
         //10d
@@ -88,6 +99,7 @@ namespace TDPS___Water_Spill_Machine_S1
                 DepozitGlobalVar.buff_col_d10++;
                 Have_d10.Text = DepozitGlobalVar.col_d10.ToString();
                 Deposit_set_d10.Text = DepozitGlobalVar.buff_col_d10.ToString();
+                f_Deposit.Text = GlobalVar.cash_deposit.ToString() + "$";
             }
         }
 
@@ -100,13 +112,22 @@ namespace TDPS___Water_Spill_Machine_S1
                 DepozitGlobalVar.buff_col_d10--;
                 Have_d10.Text = DepozitGlobalVar.col_d10.ToString();
                 Deposit_set_d10.Text = DepozitGlobalVar.buff_col_d10.ToString();
+                f_Deposit.Text = GlobalVar.cash_deposit.ToString() + "$";
             }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(GlobalVar.cash_deposit.ToString());
             this.Close();
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            DepozitGlobalVar.col_d1++;
+            DepozitGlobalVar.col_d5++;
+            DepozitGlobalVar.col_d10++;
+            Have_d1.Text = DepozitGlobalVar.col_d1.ToString();
+            Have_d5.Text = DepozitGlobalVar.col_d5.ToString();
+            Have_d10.Text = DepozitGlobalVar.col_d10.ToString();
+        }
     }
 }

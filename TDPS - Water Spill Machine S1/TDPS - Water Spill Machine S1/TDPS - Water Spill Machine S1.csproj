@@ -55,12 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Test_coin.xaml.cs">
-      <DependentUpon>Test_coin.xaml</DependentUpon>
+    <Compile Include="Close_form.xaml.cs">
+      <DependentUpon>Close_form.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessWindow.xaml.cs">
+      <DependentUpon>MessWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NoBottleWindow.xaml.cs">
+      <DependentUpon>NoBottleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial_label.xaml.cs">
+      <DependentUpon>Tutorial_label.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window_coin_acceptor.xaml.cs">
       <DependentUpon>Window_coin_acceptor.xaml</DependentUpon>
     </Compile>
+    <Page Include="Close_form.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,7 +86,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Test_coin.xaml">
+    <Page Include="MessWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NoBottleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorial_label.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,6 +144,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Res\Vint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\external_content.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\Arr_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\form_content.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

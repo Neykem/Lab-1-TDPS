@@ -15,23 +15,27 @@ using System.Windows.Shapes;
 namespace TDPS___Water_Spill_Machine_S1
 {
     /// <summary>
-    /// Логика взаимодействия для Test_coin.xaml
+    /// Логика взаимодействия для Close_form.xaml
     /// </summary>
-    public partial class Test_coin : Window
+    public partial class Close_form : Window
     {
-        public Test_coin()
+        public Close_form()
         {
             InitializeComponent();
         }
 
-        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
 
-        private void Button_Drop(object sender, DragEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
+        }
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
     }
 }
