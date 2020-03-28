@@ -64,6 +64,9 @@
     <Compile Include="NoBottleWindow.xaml.cs">
       <DependentUpon>NoBottleWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Three_hundred_buckses.xaml.cs">
+      <DependentUpon>Three_hundred_buckses.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tutorial_label.xaml.cs">
       <DependentUpon>Tutorial_label.xaml</DependentUpon>
     </Compile>
@@ -91,6 +94,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="NoBottleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Three_hundred_buckses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,6 +163,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Res\form_content.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Res\Tutorial_form_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,6 +40,7 @@
             <Button x:Name="d10_ms" Content="-" HorizontalAlignment="Left" Margin="25,58,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D10_ms_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
             <Button x:Name="d5_ms" Content="-" HorizontalAlignment="Left" Margin="25,29,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D5_ms_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
             <Button x:Name="d1_ms" Content="-" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="D1_ms_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A"/>
+            <Button x:Name="plus_deposit" Content="+$" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="18" Click="Plus_Deposit_Click" Foreground="#FF2E2A25" FontFamily="Arial" Background="{x:Null}" BorderBrush="#FF342F2A" Margin="0,-30,0,0"/>
         </Grid>
         <Grid Margin="10,157,151,48">
             <Label Content="Сумма к оплате: " HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" FontFamily="Arial" Foreground="#FF34312B" FontSize="16"/>

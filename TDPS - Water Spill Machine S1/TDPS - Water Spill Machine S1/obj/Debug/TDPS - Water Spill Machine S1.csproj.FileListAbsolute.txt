@@ -39,3 +39,5 @@ E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\ob
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\Close_form.baml
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\NoBottleWindow.g.cs
 E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\NoBottleWindow.baml
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\Three_hundred_buckses.g.cs
+E:\Git\Lab-1-TDPS\TDPS - Water Spill Machine S1\TDPS - Water Spill Machine S1\obj\Debug\Three_hundred_buckses.baml

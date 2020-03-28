@@ -1,0 +1,46 @@
+﻿<Window x:Class="TDPS___Water_Spill_Machine_S1.Three_hundred_buckses"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TDPS___Water_Spill_Machine_S1"
+        mc:Ignorable="d"
+        Title="Three_hundred_buckses" Height="250" Width="400" Foreground="#FF2F2B25" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Window.Background>
+        <ImageBrush ImageSource="Res/form_content.png"/>
+    </Window.Background>
+    <Grid>
+        <Label Content="Введите сумму для вноса валюты: " Margin="55,50,55,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" Foreground="#FF2F3125" FontWeight="Bold" >
+            <Label.Effect>
+                <DropShadowEffect Color="#FF2F3125" Opacity="0.1"/>
+            </Label.Effect>
+        </Label>
+        <TextBox Name="Content_buckses" HorizontalAlignment="Left" Height="30" Margin="32,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="344" FontFamily="Arial" FontSize="16" Foreground="#FF2F3125" BorderBrush="#FF2F3125" TextDecorations="{x:Null}" FontStyle="Italic" UndoLimit="25" TextChanged="Diposit_text_changed">
+            <TextBox.Effect>
+                <DropShadowEffect Color="#FF2F3125" Opacity="0.1"/>
+            </TextBox.Effect>
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC0AE9C" Offset="0"/>
+                    <GradientStop Color="#FFC0AC97" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="ОК" HorizontalAlignment="Left" Height="41" Margin="301,157,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial" FontSize="16" Foreground="#FF2F3125" Background="{x:Null}" BorderBrush="#FF2F3125" Click="Ok_click">
+            <Button.Effect>
+                <DropShadowEffect Color="#FF2F3125" Opacity="0.1"/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Отмена" HorizontalAlignment="Left" Height="41" Margin="32,157,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial" FontSize="16" Foreground="#FF2F3125" Background="{x:Null}" BorderBrush="#FF2F3125" Click="Close_click">
+            <Button.Effect>
+                <DropShadowEffect Color="#FF2F3125" Opacity="0.1"/>
+            </Button.Effect>
+        </Button>
+        <Label Name="Central_label" Content="          $" Margin="107,157,99,46" FontWeight="Bold" FontFamily="Arial" FontSize="30" Background="{x:Null}" Foreground="#FF3E4037" TextOptions.TextHintingMode="Animated" HorizontalAlignment="Center" Width="194">
+            <Label.Effect>
+                <DropShadowEffect Color="#FF373A2B" Opacity="0.1"/>
+            </Label.Effect>
+        </Label>
+
+    </Grid>
+</Window>

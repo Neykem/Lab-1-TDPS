@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         AllowsTransparency="True" WindowStyle="None" Background="Transparent"
         Title="MainWindow" Height="655" Width="500" WindowStartupLocation="CenterScreen" Topmost="True" Icon="Res/Bottle.png" AllowDrop="True" SnapsToDevicePixels="True" ResizeMode="NoResize"
-        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+        MouseLeftButtonDown="Window_MouseLeftButtonDown" Loaded="Window_Loaded">
 
     <Window.Triggers>
         <EventTrigger RoutedEvent="Loaded">

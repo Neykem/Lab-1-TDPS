@@ -26,6 +26,7 @@ namespace TDPS___Water_Spill_Machine_S1
         static public bool cash_change_is_have = false;
         static public bool max_tutor_windows_is_increased = false;
         static public int bottle_col = 5;
+        static public bool tutorial_window_is_open = false;
         //public event Action<String> MyPersonalizedUCEvent;
     }
     public partial class MainWindow : Window
@@ -61,6 +62,10 @@ namespace TDPS___Water_Spill_Machine_S1
             timer.Interval = new TimeSpan(0, 0, 4);
             timer.Start();
         }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Open_tutorial_window();
+        }
         private void Timer_Tick(object sender, EventArgs e)
         {
             if (GlobalVar.button_animation_switch_stat == false)
@@ -78,7 +83,7 @@ namespace TDPS___Water_Spill_Machine_S1
         {
             Close_form close_Form = new Close_form();
             close_Form.Owner = this;
-            close_Form.Show();
+            close_Form.ShowDialog();
         }
         private void Coin_Acceptor_Click(object sender, RoutedEventArgs e)
         {
@@ -86,7 +91,7 @@ namespace TDPS___Water_Spill_Machine_S1
             {
                 Window_coin_acceptor _Coin_Acceptor = new Window_coin_acceptor();
                 _Coin_Acceptor.Owner = this;
-                _Coin_Acceptor.Show();
+                _Coin_Acceptor.ShowDialog();
             }
             else if (GlobalVar.cash_change != 0)
             {
@@ -104,19 +109,18 @@ namespace TDPS___Water_Spill_Machine_S1
             GlobalVar.cash_change = 0;
             MessWindow messWindow = new MessWindow();
             messWindow.Owner = this;
-            messWindow.Show();
+            messWindow.ShowDialog();
             DepozitGlobalVar.col_d1 += DepozitGlobalVar.buff_col_d1;
             DepozitGlobalVar.col_d5 += DepozitGlobalVar.buff_col_d5;
             DepozitGlobalVar.col_d10 += DepozitGlobalVar.buff_col_d10;
             DepozitGlobalVar.buff_col_d1 = 0;
             DepozitGlobalVar.buff_col_d5 = 0;
             DepozitGlobalVar.buff_col_d10 = 0;
+            GlobalVar.cash_deposit = 0;
         }
         private void Label_Vim_Click(object sender, RoutedEventArgs e)
         {
-            Tutorial_label tutorial_Label = new Tutorial_label();
-            tutorial_Label.Owner = this;
-            tutorial_Label.Show();
+            Open_tutorial_window();
         }
         private void ButtonGoWater_Click(object sender, RoutedEventArgs e)
         {
@@ -136,6 +140,7 @@ namespace TDPS___Water_Spill_Machine_S1
                     B_textB.Text = "Сдача: ";
                     Deposit.Text = "";
                     Cost.Text = "";
+                    GlobalVar.cash_deposit = 0;
                     GlobalVar.bottle_col--;
                     Delete_bottle();
                 }
@@ -159,10 +164,6 @@ namespace TDPS___Water_Spill_Machine_S1
             }
             MessCloudGroup.Visibility = Visibility.Visible;
             MessCloidAnimation();
-        }
-        private void Coin_Acceptor_Drop(object sender, DragEventArgs e)
-        {
-            MessageBox.Show("AAA!");
         }
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -210,6 +211,8 @@ namespace TDPS___Water_Spill_Machine_S1
                     break;
                 case 0:
                     Bottle_5.Visibility = Visibility.Hidden;
+                    GlobalVar.bottle_col--;
+                    Delete_bottle();
                     break;
                 case 1488:
                     Bottle_1.Visibility = Visibility.Visible;
@@ -225,6 +228,16 @@ namespace TDPS___Water_Spill_Machine_S1
                     noBottleWindow.Owner = this;
                     noBottleWindow.ShowDialog();
                     break;
+            }
+        }
+        private void Open_tutorial_window()
+        {
+            if(GlobalVar.tutorial_window_is_open == false)
+            {
+                Tutorial_label tutorial_Label = new Tutorial_label();
+                tutorial_Label.Owner = this;
+                tutorial_Label.Show();
+                GlobalVar.tutorial_window_is_open = true;
             }
         }
     }

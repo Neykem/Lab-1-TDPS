@@ -28,9 +28,7 @@ namespace TDPS___Water_Spill_Machine_S1
         public Window_coin_acceptor()
         {
             InitializeComponent();
-            Have_d1.Text = DepozitGlobalVar.col_d1.ToString();
-            Have_d5.Text = DepozitGlobalVar.col_d5.ToString();
-            Have_d10.Text = DepozitGlobalVar.col_d10.ToString();
+            Depozit_update();
             Deposit_set_d1.Text = DepozitGlobalVar.buff_col_d1.ToString();
             Deposit_set_d5.Text = DepozitGlobalVar.buff_col_d5.ToString();
             Deposit_set_d10.Text = DepozitGlobalVar.buff_col_d10.ToString();
@@ -125,9 +123,21 @@ namespace TDPS___Water_Spill_Machine_S1
             DepozitGlobalVar.col_d1++;
             DepozitGlobalVar.col_d5++;
             DepozitGlobalVar.col_d10++;
+            Depozit_update();
+        }
+
+        private void Plus_Deposit_Click(object sender, RoutedEventArgs e)
+        {
+            Three_hundred_buckses _three_Hundred_Buckses = new Three_hundred_buckses();
+            _three_Hundred_Buckses.ShowDialog();
+            Depozit_update();
+        }
+        private void Depozit_update()
+        {
             Have_d1.Text = DepozitGlobalVar.col_d1.ToString();
             Have_d5.Text = DepozitGlobalVar.col_d5.ToString();
             Have_d10.Text = DepozitGlobalVar.col_d10.ToString();
         }
+            
     }
 }

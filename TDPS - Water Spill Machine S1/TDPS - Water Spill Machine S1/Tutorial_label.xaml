@@ -8,7 +8,7 @@
         Title="Tutorial_label" Height="450" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Topmost="True" Icon="Res/Bottle.png" AllowsTransparency="True" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <Grid Margin="0,0,0,0">
         <Grid.Background>
-            <ImageBrush ImageSource="Res/external_content.png"/>
+            <ImageBrush ImageSource="Res/Tutorial_form_2.png"/>
         </Grid.Background>
         <Button Name="Button_arr" HorizontalAlignment="Left" Margin="263,88,0,0" VerticalAlignment="Top" Width="18" Height="18" Foreground="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_1">
 

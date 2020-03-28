@@ -56,6 +56,7 @@ namespace TDPS___Water_Spill_Machine_S1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            GlobalVar.tutorial_window_is_open = false;
             this.Close();
         }
     }
